@@ -1,17 +1,19 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+
+import Dashboard from "../components/elements/Dashboard";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Sistema de inventario - SIMP </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
-        Iniciando
+        <section className="section">
+          <Dashboard />
+        </section>
       </main>
     </div>
-  )
+  );
 }
