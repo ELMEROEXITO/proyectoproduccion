@@ -128,39 +128,7 @@ const index = () => {
                         </a>
                       </td>
                     </tr>
-                    <tr>
-                      <td width="5%">
-                        <i className="fa fa-bell-o" />
-                      </td>
-                      <td>Lorum ipsum dolem aire</td>
-                      <td className="level-right">
-                        <a className="button is-small is-primary" href="#">
-                          Action
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width="5%">
-                        <i className="fa fa-bell-o" />
-                      </td>
-                      <td>Lorum ipsum dolem aire</td>
-                      <td className="level-right">
-                        <a className="button is-small is-primary" href="#">
-                          Action
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width="5%">
-                        <i className="fa fa-bell-o" />
-                      </td>
-                      <td>Lorum ipsum dolem aire</td>
-                      <td className="level-right">
-                        <a className="button is-small is-primary" href="#">
-                          Action
-                        </a>
-                      </td>
-                    </tr>
+
                   </tbody>
                 </table>
               </div>

@@ -2,6 +2,8 @@ import Head from "next/head";
 
 import Dashboard from "../components/elements/Dashboard";
 
+import ContainerCard from './../components/elements/ContainerCard';
+
 export default function Home() {
   return (
     <div>
@@ -11,7 +13,9 @@ export default function Home() {
       </Head>
       <main>
         <section className="section">
-          <Dashboard />
+          <Dashboard>
+              <ContainerCard />
+          </Dashboard>
         </section>
       </main>
     </div>

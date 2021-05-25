@@ -1,9 +1,10 @@
 import React from "react";
+import Link from 'next/link'
 
 //import components
 import ContainerCard from "../ContainerCard";
 
-const index = () => {
+const index = ({children}) => {
   return (
     <div className="container is-fluid">
       <div className="columns">
@@ -12,12 +13,14 @@ const index = () => {
             <p className="title is-4">SISTEMA DE PRODUCCION</p>
 
             <ul className="menu-list">
-              <p class="menu-label">Gestion de Inventario</p>
+              <p className="menu-label">Gestion de Inventario</p>
               <li>
                 <a>Lote Económico</a>
                 <ul>
                   <li>
-                    <a>Modelo P</a>
+                    <Link href='/modelo-p'>
+                      <a href='/modelo-p'>Modelo P</a>
+                    </Link>
                   </li>
                   <li>
                     <a>Modelo Q</a>
@@ -38,7 +41,7 @@ const index = () => {
               </li>
             </ul>
             <ul className="menu-list">
-              <p class="menu-label">
+              <p className="menu-label">
                 Plan de requerimiento de materiales "MRP"
               </p>
               <li>
@@ -65,7 +68,7 @@ const index = () => {
             </ul>
 
             <ul className="menu-list">
-              <p class="menu-label">Plan agregado</p>
+              <p className="menu-label">Plan agregado</p>
             </ul>
           </aside>
         </div>
@@ -73,7 +76,9 @@ const index = () => {
           <nav className="breadcrumb" aria-label="breadcrumbs">
             <ul>
               <li>
-                <a href="../">Bulma</a>
+                <Link href='/'>
+                  <a href="/">Inicio</a>
+                </Link>
               </li>
               <li>
                 <a href="../">Templates</a>
@@ -88,7 +93,7 @@ const index = () => {
               </li>
             </ul>
           </nav>
-          <ContainerCard />
+          {children}
         </div>
       </div>
     </div>
